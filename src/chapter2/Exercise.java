@@ -17,6 +17,7 @@ public class Exercise {
         int numberOfCoffee = scanner.nextInt();
 
         System.out.println("On a " + weather + " " + season +
-                " day, I drink a minimum of " + numberOfCoffee + " cups of coffee.");
+                " day, I drink a minimum of " + numberOfCoffee + " cups of coffee."
+        );
     }
 }
