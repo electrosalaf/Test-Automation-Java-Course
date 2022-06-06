@@ -37,10 +37,10 @@ public class Exercise3 {
         }
         else if (total > dollar){
             double over = total - dollar;
-            System.out.println("You are " + String.format("%.2f", over) + " over");
+            System.out.println("You are " +  String.format("%.2f", over) + " over");
         } else {
             double less = dollar - total;
-            System.out.println("You are " + String.format("%s.2f", less) + " less");
+            System.out.println("You are " + String.format("%.2f", less) + " less");
         }
     }
 }
