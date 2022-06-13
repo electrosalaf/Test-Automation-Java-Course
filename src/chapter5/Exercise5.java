@@ -2,16 +2,6 @@ package chapter5;
 
 import java.util.Scanner;
 
-/**
- * Calculate the cell phone total bill.
- * The user input the plan fee and overage minutes.
- * Charge user 0.25 for every minute overage and 15% tax on the subtotal.
- *
- *
- * Note: This method works but this is not the best and optimal way to do this stuff
- * I will try a better way out.
- *
- */
 public class Exercise5 {
 
     static double overageCharges = 0.25;
@@ -25,19 +15,10 @@ public class Exercise5 {
         double overageFees = calculateOverageFees(overageTime);
         double totalTax = calculateTax(baseCost, overageFees);
 
-        // Calculate the tax
-        calculateTax(baseCost, overageFees);
-
-        // Calculate the overage fees
-        calculateOverageFees(overageTime);
-
-        // Calculate the total
         double total = calculateTotal(baseCost, overageFees, totalTax);
 
         scanner.close();
 
-        // Display Result
-        //double total = calculateTotal(baseCost, overageFees, totalTax);
         displayResult(baseCost, overageFees, totalTax, total);
     }
 
@@ -70,21 +51,12 @@ public class Exercise5 {
         return totalTax;
     }
 
-    private static double calculateTotal(
-            double baseCost,
-            double overageFees,
-            double totalTax
-    ) {
+    private static double calculateTotal(double baseCost, double overageFees, double totalTax) {
         double total = baseCost + overageFees + totalTax;
         return total;
     }
 
-    private static void displayResult(
-            double baseCost,
-            double overageFees,
-            double tax,
-            double total
-    ) {
+    private static void displayResult(double baseCost, double overageFees, double tax, double total) {
         System.out.println("Phone Bill Statement:");
         System.out.println("Plan: $" + baseCost);
         System.out.println("Overage: $" + overageFees);
