@@ -9,6 +9,10 @@ public class InheritanceTester {
 
         Square square = new Square();
         square.print("square");
+
+        Mother mother = new Mother();
+        mother.setName("Priceless Gold");
+        System.out.println(mother.getName() + " is a " + mother.getGender());
     }
 
     public void testSquareOverride() {
