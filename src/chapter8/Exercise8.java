@@ -7,7 +7,7 @@ import java.util.Scanner;
  * at least 8 characters long, contains uppercase, contains special character
  * not contain username and not same as old password
  */
-public class Exercise6 {
+public class Exercise8 {
 
     private static final int PASSWORD_LENGTH = 8;
     private static Scanner scanner = new Scanner(System.in);
