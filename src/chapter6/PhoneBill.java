@@ -75,10 +75,10 @@ public class PhoneBill {
 
     public double calculateTax() {
         double rate = 0.15;
-        return rate * (baseCost +calculateOverage());
+        return rate * (baseCost + calculateOverage());
     }
 
-    public double calculateTotal() {
+    public double calculateTotal(   ) {
         return baseCost + calculateOverage() + calculateTax();
     }
 
